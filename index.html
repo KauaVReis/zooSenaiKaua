@@ -36,17 +36,22 @@
         transform: scale(1.2);
         /* Aumenta a escala para dar o efeito de zoom */
     }
+    #container{
+        text-align: center;
+    }
 </style>
 
 <body>
-    <div class="image-container">
-        <img src="" class="image-container" width="500px" id="fotoAnimal">
+    <div id="container">
+        <div class="image-container">
+            <img src="" class="image-container" width="700px" id="fotoAnimal">
+        </div>
+        <p></p>
+        <button type="button" onclick="viewAnimal('gato')">Visualizar Gato</button>
+        <button type="button" onclick="viewAnimal('cachorro')">Visualizar Cachorro</button>
+        <button type="button" onclick="viewAnimal('passaro')">Visualizar Pássaro</button>
+        <button type="button" onclick="viewAnimal('')">Visualizar Algo</button>
     </div>
-    <p></p>
-    <button type="button" onclick="viewAnimal('gato')">Visualizar Gato</button>
-    <button type="button" onclick="viewAnimal('cachorro')">Visualizar Cachorro</button>
-    <button type="button" onclick="viewAnimal('passaro')">Visualizar Pássaro</button>
-    <button type="button" onclick="viewAnimal('')">Visualizar Algo</button>
 </body>
 <script>
     const fotoAnimal = document.getElementById("fotoAnimal")
